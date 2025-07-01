@@ -1,0 +1,122 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('fonts/Inter/Inter-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter-Bold';
+	src: url('fonts/Inter/Inter-Bold.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter-Medium';
+	src: url('fonts/Inter/Inter-Medium.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF-Pro-Display';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/sf-pro-display/sf-pro-display-regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'SF-Pro-Display-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url(fonts/sf-pro-display/sf-pro-display-medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'SF-Pro-Display-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/sf-pro-display/sf-pro-display-bold.woff) format('woff');
+}
+
+$main_font: 'SF-Pro-Display';
+$main_font_medium: 'SF-Pro-Display-Medium';
+$main_font_bold: 'SF-Pro-Display-Bold';
+$color_main: #fd9400;
+$color_text: #121619;
+$color_hover: #fd9400;
+$color_link: #0f76bd;
+$color_sub: #595959;
+$color_quiet: #959595;
+$color_red: #ff0008;
+$color_lowred: #ff5a60;
+$color_green: #009900;
+$second_font: 'PlusJakartaSans';
+
+$status_0: #bb0000;
+$status_1: #226934;
+$status_2: #009900;
+$status_4: #0066cc;
+$status_5: #ff9900;
+$status_6: #8b4513;
+$status_7: #cdcd00;
+$status_8: #eeb422;
+$status_9: #cd00cd;
+$status_10: #cd69c9;
+$status_12: #8968cd;
+$status_13: #008080;
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1360px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container {
+		max-width: 1430px;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.container {
+		max-width: 99%;
+	}
+}
+
+.container {
+	position: relative;
+	margin: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $main_font;
+	color: $color_text;
+	line-height: 1.2;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+h3,h4,h5,h6 {
+	font-weight: 400;
+}

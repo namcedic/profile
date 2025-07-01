@@ -1,0 +1,30 @@
+.header-bar {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 24px;
+	background: #f0f2f5;
+	border-bottom: 1px solid #f0f0f0;
+	min-height: 86px;
+	width: 100%;
+}
+
+.user-info {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 16px;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+	.user-info p {
+		display: none;
+	}
+	.header-bar {
+		justify-content: center;
+		align-items: center;
+	}
+}
