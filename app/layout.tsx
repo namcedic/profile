@@ -2,7 +2,6 @@
 
 import { Inter } from 'next/font/google'
 import { StoreProvider } from '@/components/StoreProvider'
-import { AppHeader } from '@/components/Header'
 import React, { useEffect } from 'react'
 import { loadAuthFromCookie, refreshTokenRequest } from '@/lib/redux/features/auth/slice'
 import { jwtDecode } from 'jwt-decode'
@@ -85,10 +84,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={inter.className}>
 				<StoreProvider>
-					<AuthLoader>
-						<AppHeader />
 						<main>{children}</main>
-					</AuthLoader>
 				</StoreProvider>
 			</body>
 		</html>

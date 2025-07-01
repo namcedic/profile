@@ -52,6 +52,7 @@ $color_quiet: #959595;
 $color_red: #ff0008;
 $color_lowred: #ff5a60;
 $color_green: #009900;
+$color_white: #ffffff;
 $second_font: 'PlusJakartaSans';
 
 $status_0: #bb0000;
@@ -105,16 +106,30 @@ $status_13: #008080;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $main_font;
-	color: $color_text;
+	color: $color_white;
 	line-height: 1.2;
 }
 
 h1 {
 	font-weight: 600;
+	font-size: 2em;
 }
 
 h2 {
 	font-weight: 500;
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+h4 {
+	font-size: 1em;
+}
+h5 {
+	font-size: 0.83em;
+}
+h6 {
+	font-size: 0.67em;
 }
 
 h3,h4,h5,h6 {

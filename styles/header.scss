@@ -1,23 +1,130 @@
+$border-radius: 60px;
+
 .header-bar {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	align-items: center;
-	padding: 0 24px;
-	background: #f0f2f5;
-	border-bottom: 1px solid #f0f0f0;
-	min-height: 86px;
+	//background: url('/static/images/background-img.jpg') center center / cover no-repeat;
+	background: linear-gradient(180deg, #1d6743 0.13%, #3ff38e 100.13%);
+	//background: linear-gradient(180deg, #185e34 0.13%, #0bcf5a 100.13%);
+	background-size: cover;
+	height: 500px;
+	border-radius: $border-radius;
 	width: 100%;
+	position: relative;
+	padding: 50px 100px;
 }
 
 .user-info {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 16px;
-	justify-content: center;
+	justify-content: space-between;
 	white-space: nowrap;
+	width: 100%;
+	position: relative;
+	//top: 5%;
+
+	& .info-left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		& .info-circle {
+			width: 40px;
+			height: 40px;
+			background-color: $color_white;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		& .user-icon {
+			color: green;
+		}
+	}
+
+	& .info-left p {
+		margin: 0;
+		color: $color_white
+	}
+
+	& .info-right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		color: $color_white;
+		width: 200px;
+		height: 40px;
+		border: 1px solid $color_white;
+		border-radius: $border-radius;
+	}
 }
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	color: $color_white;
+
+	& .header-content-left {
+		width: 40%;
+		& h1 {
+			color: $color_white !important;
+			font-size: 32px;
+		}
+		p {
+			//max-height: 120px;
+			//overflow: hidden;
+			//display: -webkit-box;
+			//-webkit-line-clamp: 5;
+			//-webkit-box-orient: vertical;
+			//text-overflow: ellipsis;
+		}
+	}
+
+	& .header-content-right {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		align-items: flex-end;
+		width: 40%;
+		& .avatar {
+			position: relative;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+		}
+		& p {
+			text-align: right;
+		}
+	}
+}
+
+.description {
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.description.clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.description.show {
+	display: block;
+	white-space: normal;
+	overflow: visible;
+}
+
+
 
 @media (max-width: 480px) {
 	.user-info p {
