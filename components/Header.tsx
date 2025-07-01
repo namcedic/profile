@@ -42,7 +42,7 @@ export const Header = () => {
 						{title}
 					</p>
 
-					<Button className='btn mt-5' type='default' onClick={handleToggle}>Detail</Button>
+					<Button className='btn mt-5 detail-button' type='default' onClick={handleToggle}>Detail</Button>
 				</div>
 
 				<div className='header-content-right'>

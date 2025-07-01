@@ -5,9 +5,7 @@ $border-radius: 60px;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	//background: url('/static/images/background-img.jpg') center center / cover no-repeat;
 	background: linear-gradient(180deg, #1d6743 0.13%, #3ff38e 100.13%);
-	//background: linear-gradient(180deg, #185e34 0.13%, #0bcf5a 100.13%);
 	background-size: cover;
 	height: 500px;
 	border-radius: $border-radius;
@@ -24,7 +22,6 @@ $border-radius: 60px;
 	white-space: nowrap;
 	width: 100%;
 	position: relative;
-	//top: 5%;
 
 	& .info-left {
 		display: flex;
@@ -77,13 +74,12 @@ $border-radius: 60px;
 			color: $color_white !important;
 			font-size: 32px;
 		}
-		p {
-			//max-height: 120px;
-			//overflow: hidden;
-			//display: -webkit-box;
-			//-webkit-line-clamp: 5;
-			//-webkit-box-orient: vertical;
-			//text-overflow: ellipsis;
+		.detail-button {
+			color: $color_green;
+		}
+		.detail-button:hover {
+			color: $color_green;
+			border: 2px solid $color_green;
 		}
 	}
 
